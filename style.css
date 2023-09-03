@@ -40,5 +40,20 @@ h1{
     background-color: rgba(255,255,255,0.8);
     border:2px solid #000;
     max-width: 200px;
-    
+    margin:20px auto;
+}
+#result{
+    colour:white;
+    text-align: center;
+    text-shadow: 1px 1px 2px #888;
+    font-size: 25px;
+}
+.reset{
+    text-align: center;
+}
+#resetBtn {
+    border: 2px solid #000;
+    color:black;
+    cursor: pointer;
+    padding
 }
