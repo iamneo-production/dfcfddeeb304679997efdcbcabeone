@@ -19,7 +19,7 @@ const ticTacToe = (element, index) => {
     if(cells[index]==='' && !isGameOver()){
         cells[index] = currentPlayer;
         element.textContent=currentPlayer;
-        currentPlayer= currentPlayer === 'X ? 'O' : 'X';
+        currentPlayer= currentPlayer === 'X' ? 'O' : 'X';
         updateResult();
     }
 };
