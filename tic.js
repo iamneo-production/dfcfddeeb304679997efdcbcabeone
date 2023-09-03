@@ -10,8 +10,11 @@ function makeMove(button){
             document.getElementById('result').innerText='player ${curr} wins!'
             won=true;
         }else if(!board.includes('')){
-            document.getElementById('result').inner
-
+            document.getElementById('result').innerText="It's a draw!";
+            won=true;
+        }else{
+            curr=(curr === 'X') ? '0' :'X';
+            document.getElementById('result').innerText='player ${curr}'s Turn'
         }
     }
 }
