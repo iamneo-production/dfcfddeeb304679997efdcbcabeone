@@ -27,8 +27,16 @@ const ticTacToe = (element, index) => {
 const isGameOver= () => {
     for (let condition of conditions){
         const [a,b,c]=condition;
-        if(cells[a] && c)
+        if(cells[a] && cells[a] === cells[b] && cells[a] === cells[c]){
+            result.textContent=`player ${cells[a]} wins!`;
+            return true;
+        }
     }
+    if(cells.every(cell => cell !=='')){
+        result.textContent="It's draw!";
+        return true;
+    }
+    return false;
 }
 const resetGame = () => {
     // Your code to reset the game state
