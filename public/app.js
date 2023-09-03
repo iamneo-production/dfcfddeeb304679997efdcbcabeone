@@ -37,7 +37,8 @@ const isGameOver= () => {
         return true;
     }
     return false;
-}
+};
+const updateResult =()
 const resetGame = () => {
     // Your code to reset the game state
     // ...
