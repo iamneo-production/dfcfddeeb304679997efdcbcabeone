@@ -33,5 +33,13 @@ function checkWin(){
     return false;
 }
 function resetGame(){
-    gameBoard=['','','']
+    board=['','','','','','','','',''];
+    won=false;
+    curr='X';
+    document.querySelectorAll('.btn').forEach(button=>{
+        button.innerText='';
+        button.disabled=false;
+    });
+    document.getElementById('result'.innertext=`player ${curr}`)
+
 }
