@@ -40,6 +40,12 @@ function resetGame(){
         button.innerText='';
         button.disabled=false;
     });
-    document.getElementById('result'.innertext=`player ${curr}`)
-
+    document.getElementById('result').innertext=`Player ${curr}'s Turn`;
 }
+document.querySelectorAll('.btn').forEach(button =>{
+    button.addEventListener('click',function(){
+        makeMove(this);
+        this.disabled=true;
+    })
+})
+document.getElementById('result').innerText=`Player ${curr}'s Turn`;
