@@ -38,16 +38,15 @@ const isGameOver= () => {
     }
     return false;
 };
-const updateResult =()
+const updateResult = () =>{
+    if(!isGameOver()){
+        result.textContent=`Player ${currentPlayer}'s Turn`;
+    }
+};
 const resetGame = () => {
-    // Your code to reset the game state
-    // ...
-
-    // Your code to update the 'result' element
-    // ...
-
-    // Your code to re-enable buttons
-    // ...
+    cells=['','','','','','','','',''];
+    currentPlayer='X';
+    result.textContent=`Player ${}`
 };
 
 btns.forEach((btn, i) => {
