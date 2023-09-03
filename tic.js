@@ -24,5 +24,14 @@ function checkWin(){
         [0,3,6],[1,4,7],[2,5,8],
         [0,4,8],[2,4,6]
     ];
-    for9const condition of winCo
+    for(const condition of winConditions){
+        const[a,b,c]=condition;
+        if(board[a] && board[a] === board[b] && board[a]===board[c]){
+            return true; 
+        }
+    }
+    return false;
+}
+function resetGame(){
+    gameBoard=['','','']
 }
