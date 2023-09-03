@@ -24,16 +24,12 @@ const ticTacToe = (element, index) => {
     }
 };
 
-    /*
-    **Part 2: Reset Function (Add your code here)**
-
-    1. Implement a new function that resets the game to its initial state.
-    2. Ensure the 'cells', 'btns', and 'currentPlayer' variables are reset.
-    3. Update the 'result' element to indicate the current player's turn.
-    4. Re-enable all buttons for a new game.
-    */
-
-// Function to reset the game
+const isGameOver= () => {
+    for (let condition of conditions){
+        const [a,b,c]=condition;
+        if(cells[a] && c)
+    }
+}
 const resetGame = () => {
     // Your code to reset the game state
     // ...
